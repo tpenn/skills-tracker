@@ -27,7 +27,6 @@ public class SkillsController {
     }
 
     @RequestMapping(method = {RequestMethod.POST}, value = "form")
-    @PostMapping("formEntry")
     public String formComplete(@RequestParam String name, String favorite, String second, String third, Model model) {
         model.addAttribute("name", name);
         model.addAttribute("favorite", favorite);

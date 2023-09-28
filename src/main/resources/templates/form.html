@@ -13,25 +13,19 @@
     <label for="favorite"><strong>My favorite language:</strong></label>
     <br>
     <select name="favorite" id="favorite">
-        <th:block th:each="language : ${languages}">
-            <option th:text="${language}"></option>
-        </th:block>
+        <th:block th:replace="fragments :: languageOptions"></th:block>
     </select>
     <br><br>
     <label for="second"><strong>My second favorite language:</strong></label>
     <br>
     <select name="second" id="second">
-        <th:block th:each="language : ${languages}">
-            <option th:text="${language}"></option>
-        </th:block>
+        <th:block th:replace="fragments :: languageOptions"></th:block>
     </select>
     <br><br>
     <label for="third"><strong>My third favorite language:</strong></label>
     <br>
     <select name="third" id="third">
-        <th:block th:each="language : ${languages}">
-            <option th:text="${language}"></option>
-        </th:block>
+        <th:block th:replace="fragments :: languageOptions"></th:block>
     </select>
     <br><br>
     <button name="submit">Submit</button>
