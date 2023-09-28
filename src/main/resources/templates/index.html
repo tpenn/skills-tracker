@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Skills Tracker</title>
+</head>
+<body>
+<h1>Skills Tracker</h1>
+<h2>We have a few skills we would like to learn.  Here is the list!</h2>
+<ol>
+    <li th:each="language : ${languages}" th:text="${language}"></li>
+</ol>
+<br>
+<a th:href="form">Choose your favorite languages</a>
+</body>
+</html>
